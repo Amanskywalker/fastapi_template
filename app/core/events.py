@@ -5,7 +5,6 @@ from app.core.settings.app import AppSettings
 from fastapi import FastAPI
 from loguru import logger
 
-
 async def connect_to_db(app: FastAPI, settings: AppSettings) -> None:
     logger.info("Connecting to PostgreSQL")
 
@@ -16,6 +15,10 @@ async def connect_to_db(app: FastAPI, settings: AppSettings) -> None:
     )
 
     logger.info("Connection established")
+
+async def db_engine()
+    engine=connect_to_db(FastAPI,AppSettings)
+    return engine
 
 def create_start_app_handler(
     app: FastAPI,
